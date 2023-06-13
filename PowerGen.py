@@ -85,7 +85,7 @@ $324add2cb7df42bcbb996369abde03a9.Close()
 
 '''
 
-    # Generate obfuscated code and variable calls
+    # Generate obfuscated code
     obfuscated_code = gen_obfuscated_code(input_code)
 
     # Save the obfuscated code to a file
