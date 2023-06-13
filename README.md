@@ -9,7 +9,7 @@
  python3 Payload-Gen.py
  ```
 
-start Listener 
+start netcat Listener 
  ```
  nc -lnvp PORT
  ```
