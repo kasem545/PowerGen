@@ -3,10 +3,9 @@
 
  ```
  python3 Payload-Gen.py
-
  ```
 
-
+start Listener 
  ```
  nc -lnvp PORT
  ```
