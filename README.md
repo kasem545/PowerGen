@@ -1,4 +1,4 @@
-# payload-gen
+# PowerGen
  powershell payload generator 
  
  -virustotal scan 
